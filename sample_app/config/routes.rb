@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  resources :sessions, :only => [:new, :create, :destroy]
+
+  get 'sessions/new'
 
   root "pages#home"
 
@@ -10,6 +13,8 @@ Rails.application.routes.draw do
   get '/help' => "pages#help"
   
   get '/signup' => "users#new"
+  get '/signin' => "sessions#new"
+  get '/signout' => "sessions#destroy"
 
   resources :users
 

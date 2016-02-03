@@ -1,45 +1,62 @@
 .container {
-  width: 710px;
+  width: 1000px;
+  margin-left: 700px;
+
 }
 
 body {
-  background: #184eec;
+   background: url("http://www.my-hd-wallpapers.fr/wall/1409738211_eiffel-tower-at-sunrise_800.jpg") no-repeat center fixed #000; // l'image doit être assez grande à l'origine quand même !
+  -webkit-background-size: cover; /* pour Chrome et Safari */
+  -moz-background-size: cover; /* pour Firefox */
+  -o-background-size: cover; /* pour Opera */
+  background-size: cover; /* version standardisée */
 }
 
 header {
-  padding-top: 20px;
+  padding-top: 50px;
+  padding-right: 50px;  
 }
 
 header img {
-  padding: 1em;
-  background: #fff;
+   padding: 1em;
+   width: 200px;
+  height: 100px;
+ 
+   
+    
+   background: rgba(54, 25, 25, .01);
 }
 
 section {
   margin-top: 1em;
-  font-size: 120%;
+  font-size: 20px;
   padding: 20px;
-  background: #fff;
+  background: rgba(54, 25, 25, .01);
 }
 
 section h1 {
-  font-size: 200%;
+  color: #8e2a00;
+  font-weight: bold;
+  font-size: 30px; 
+  padding: 30px;
 }
 
 /* Liens */
 
 a {
-  color: #09c;
+  color: #8e2a00;
   text-decoration: none;
+  font-size: 20px; 
 }
 
 a:hover {
-  color: #069;
+  color: #8e2a00;
   text-decoration: underline;
+
 }
 
 a:visited {
-  color: #069;
+  color: #8e2a00;
 }
 Vous pouvez voir le résultat de ce code CSS dans l'illustration 5.4. Il y a beaucoup de CSS ici, mais il a une forme consistante. Chaque règle se réfère à une class, un id ou une balise HTML, ou une combinaison des trois, suivi par une liste des commandes de style. Par exemple :
 
@@ -49,6 +66,7 @@ body {
 … change la couleur de fond de la balise body en « baby blue », tandis que :
 
 header img {
+  float: left;
   padding: 1em;
   background: #fff;
 }
@@ -60,8 +78,8 @@ nav {
 }
 
 nav {
-  background-color: white;
-  padding: 0 0.7em;
+  background: rgba(54, 25, 25, .01);
+  padding: 1em;
   white-space: nowrap;
 }
 
@@ -82,7 +100,8 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-  color: #09c;
+  color: #070600;
+  font-size: 40px;
 }
 
 nav ul li a:hover {
@@ -97,8 +116,8 @@ a.signup_button {
   display: block;
   text-align: center;
   width: 190px;
-  color: #fff;
-  background: #184eec;
+  color:#8e2a00;
+  background: #f9e389;
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
@@ -118,11 +137,13 @@ a.signup_button {
 
 
 footer {
+  font-size: 20px; 
   text-align: center;
   margin-top: 10px;
   width: 710px;
   margin-left: auto;
   margin-right: auto;
+  padding: 5em;
 }
 
 footer nav {
@@ -197,3 +218,10 @@ div.field, div.actions {
   list-style: square;
 }
 
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
