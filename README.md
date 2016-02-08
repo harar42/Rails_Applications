@@ -1,5 +1,8 @@
 # Rails_Applications
 
+Update prevu le 14/02/16 pour tous mes projets
+
+
 Serie de projets en Rails.
 
 Creation d'un site exemple sans utilisation de gems.(site lambda)
