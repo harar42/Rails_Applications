@@ -36437,3 +36437,15 @@ Processing by PagesController#home as HTML
   Rendered layouts/_header.html.erb (29.6ms)
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 161ms (Views: 159.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-05 12:23:17 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_stylesheets.html.erb (56.4ms)
+  Rendered layouts/_header.html.erb (30.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 174ms (Views: 172.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-05 12:23:17 +0100
