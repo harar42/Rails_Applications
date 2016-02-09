@@ -913,3 +913,1525 @@ Processing by PostsController#index as HTML
   [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
   Rendered posts/index.html.erb within layouts/application (1.7ms)
 Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-02-09 15:04:52 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 391ms (Views: 346.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-02-09 15:17:39 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:19: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+</ul>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:23: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+<li> <a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:24: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:25: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:26: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:27: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+</ul>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:32: unknown regexp options - bdy
+unmatched close parenthesis: /ul>
+
+<%= yield );@output_buffer.safe_append='
+
+</
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+</html>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:33: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:19: unknown regexp option - l
+  app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:23: unknown regexp option - l
+  app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:24: unknown regexp option - l
+  app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:25: unknown regexp option - l
+  app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:26: unknown regexp option - l
+  app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:27: unknown regexp option - l
+  app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:32: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:33: unterminated regexp meets end of file
+
+
+
+
+Started GET "/posts/1" for ::1 at 2016-02-09 15:18:09 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:19: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+</ul>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:23: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+<li> <a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:24: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:25: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:26: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:27: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+</ul>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:32: unknown regexp options - bdy
+unmatched close parenthesis: /ul>
+
+<%= yield );@output_buffer.safe_append='
+
+</
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+</html>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:33: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:19: unknown regexp option - l
+  app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:23: unknown regexp option - l
+  app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:24: unknown regexp option - l
+  app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:25: unknown regexp option - l
+  app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:26: unknown regexp option - l
+  app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:27: unknown regexp option - l
+  app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:32: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:33: unterminated regexp meets end of file
+
+
+
+
+Started GET "/" for ::1 at 2016-02-09 15:18:18 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:19: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+</ul>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:23: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+<li> <a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:24: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:25: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:26: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:27: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+</ul>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:32: unknown regexp options - bdy
+unmatched close parenthesis: /ul>
+
+<%= yield );@output_buffer.safe_append='
+
+</
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+</html>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:33: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:19: unknown regexp option - l
+  app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:23: unknown regexp option - l
+  app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:24: unknown regexp option - l
+  app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:25: unknown regexp option - l
+  app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:26: unknown regexp option - l
+  app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:27: unknown regexp option - l
+  app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:32: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:33: unterminated regexp meets end of file
+
+
+
+
+Started GET "/" for ::1 at 2016-02-09 15:18:45 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (9.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.6ms)
+
+SyntaxError (/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:19: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+</ul>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:23: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+<li> <a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:24: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:25: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:26: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+<li><a href="https://github.com/harar42"> Github </a></li>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:27: unknown regexp option - l
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+</ul>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:32: unknown regexp options - bdy
+unmatched close parenthesis: /ul>
+
+<%= yield );@output_buffer.safe_append='
+
+</
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+</html>
+ ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:33: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:19: unknown regexp option - l
+  app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:23: unknown regexp option - l
+  app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:24: unknown regexp option - l
+  app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:25: unknown regexp option - l
+  app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:26: unknown regexp option - l
+  app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:27: unknown regexp option - l
+  app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:32: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:33: unterminated regexp meets end of file
+
+
+
+
+Started GET "/" for ::1 at 2016-02-09 15:20:51 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 175ms (Views: 174.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:20:51 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:20:51 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-09 15:20:51 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:20:51 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:20:51 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:20:51 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:20:51 +0100
+
+
+Started GET "/images/logo.png" for ::1 at 2016-02-09 15:20:51 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/harar/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/harar/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/harar/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.9ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (135.5ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (114.6ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (202.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 15:22:45 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( 42-logo.png )` to `config/initializers/assets.rb` and restart your server):
+    10: <div id="sidebar">
+    11: <div id="logo">
+    12: <%= link_to root_path do %>
+    13: <%= image_tag "42-logo.png" %>
+    14: <% end %>
+    15: </div>
+    16: <ul>
+  app/views/layouts/application.html.erb:13:in `block in _app_views_layouts_application_html_erb___2320551929588559934_70228740836340'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2320551929588559934_70228740836340'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.8ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.0ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.5ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 15:27:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (8.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (14.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 653ms (Views: 603.8ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:27:28 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-09 15:27:28 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:27:28 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:27:28 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:27:28 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:27:28 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:27:28 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:27:29 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:35:43 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__351945165565132020_70363137320800 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb__351945165565132020_70363137320800 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 411ms (Views: 410.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:35:44 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:35:44 +0100
+
+
+Started GET "/assets/application.self-20df6367593f2929ab236c94274d8450e0773ba5c6b2c1d3b9548d92e9663ec8.css?body=1" for ::1 at 2016-02-09 15:35:44 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:35:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:35:44 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:35:44 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:35:44 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:35:44 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:35:44 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:35:58 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:35:58 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:35:58 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:35:58 +0100
+
+
+Started GET "/assets/application.self-20df6367593f2929ab236c94274d8450e0773ba5c6b2c1d3b9548d92e9663ec8.css?body=1" for ::1 at 2016-02-09 15:35:58 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:35:58 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:35:58 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:35:58 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:35:58 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:35:58 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:36:03 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:36:03 +0100
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:36:03 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:36:03 +0100
+
+
+Started GET "/assets/application.self-20df6367593f2929ab236c94274d8450e0773ba5c6b2c1d3b9548d92e9663ec8.css?body=1" for ::1 at 2016-02-09 15:36:03 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:36:03 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:36:03 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:36:03 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:36:03 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:36:03 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:36:05 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:36:05 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:36:05 +0100
+
+
+Started GET "/assets/application.self-20df6367593f2929ab236c94274d8450e0773ba5c6b2c1d3b9548d92e9663ec8.css?body=1" for ::1 at 2016-02-09 15:36:05 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:36:05 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:36:05 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:36:05 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:36:05 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:36:05 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:36:05 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:37:11 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:37:11 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:37:11 +0100
+
+
+Started GET "/assets/application.self-20df6367593f2929ab236c94274d8450e0773ba5c6b2c1d3b9548d92e9663ec8.css?body=1" for ::1 at 2016-02-09 15:37:11 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:37:11 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:37:11 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:37:11 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:37:11 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:37:11 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:37:11 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:37:31 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (9.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 422ms (Views: 387.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-20df6367593f2929ab236c94274d8450e0773ba5c6b2c1d3b9548d92e9663ec8.css?body=1" for ::1 at 2016-02-09 15:37:32 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:37:32 +0100
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:37:32 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:37:32 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:37:32 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:37:32 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:37:32 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:37:32 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:37:32 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:40:10 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:40:10 +0100
+
+
+Started GET "/assets/application.self-20df6367593f2929ab236c94274d8450e0773ba5c6b2c1d3b9548d92e9663ec8.css?body=1" for ::1 at 2016-02-09 15:40:10 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:40:10 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:40:10 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:40:10 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:40:10 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:40:10 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:40:10 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:40:10 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:45:44 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 379ms (Views: 377.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:45:44 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:45:44 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 15:45:44 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:45:44 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:45:44 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:45:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:45:44 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:45:44 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:45:44 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:48:27 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 224ms (Views: 223.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:48:28 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:48:28 +0100
+
+
+Started GET "/assets/application.self-f007baf1f0e135e5803e109d1665cc20a505787bec5117a082c417305f7156ac.css?body=1" for ::1 at 2016-02-09 15:48:28 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:48:28 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:48:28 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:48:28 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:48:28 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:48:28 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:48:28 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:48:36 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:48:36 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:48:36 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 15:48:36 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:48:36 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:48:36 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:48:36 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:48:36 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:48:36 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:48:36 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:49:44 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:49:44 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:49:44 +0100
+
+
+Started GET "/assets/application.self-2d81453764529e1861111a10b285688ec41003754c3a56d1f5722829bf9c0948.css?body=1" for ::1 at 2016-02-09 15:49:44 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:49:44 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:49:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:49:44 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:49:44 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:49:44 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:49:44 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:50:07 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 78ms (Views: 77.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:50:08 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:50:08 +0100
+
+
+Started GET "/assets/application.self-c55c9f402ab636133d9e495c329d2a1bc3f77893879f797088c78485975e5285.css?body=1" for ::1 at 2016-02-09 15:50:08 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:50:08 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:50:08 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:50:08 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:50:08 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:50:08 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:50:08 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:50:28 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 80ms (Views: 79.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:50:28 +0100
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:50:28 +0100
+
+
+Started GET "/assets/application.self-e7b5aaa0bae94894da9b5aafc27fe9b6f8351eae96e51bc810acf639a2e99ad0.css?body=1" for ::1 at 2016-02-09 15:50:28 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:50:28 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:50:28 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:50:28 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:50:28 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:50:28 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:50:28 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:50:58 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 83ms (Views: 82.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:50:58 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:50:58 +0100
+
+
+Started GET "/assets/application.self-5a9ef8ddbd927eac9083156a26a1b6e72a3a76d09926a0ae629d268e25b3e424.css?body=1" for ::1 at 2016-02-09 15:50:58 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:50:58 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:50:58 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:50:58 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:50:58 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:50:58 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:50:58 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:51:27 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 84ms (Views: 83.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:51:27 +0100
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:51:27 +0100
+
+
+Started GET "/assets/application.self-1a348d12c4647fe762d4b327aa9b4abeb1e104243b5fcb3a90923743daa4616d.css?body=1" for ::1 at 2016-02-09 15:51:27 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:51:27 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:51:27 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:51:27 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:51:27 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:51:27 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:51:27 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:51:44 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 109ms (Views: 108.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:51:44 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:51:44 +0100
+
+
+Started GET "/assets/application.self-a5dbbd88312c12fd09f6c4a82cc11c184cebbf654341173a327dfd935fe7a6c7.css?body=1" for ::1 at 2016-02-09 15:51:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:51:44 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:51:44 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:51:44 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:51:44 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:51:44 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:51:44 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:53:07 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.css.scss to /Users/harar/Desktop/Ruby/Rails_App/blog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4111004043478989741_70205197797840 at /Users/harar/Desktop/Ruby/Rails_App/blog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 335ms (Views: 334.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:53:07 +0100
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:53:07 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:53:07 +0100
+
+
+Started GET "/assets/application.self-39abc0a86b718c30d44d510afc8193f0f8b5940da07cf2c6e31ee1ba6aea8940.css?body=1" for ::1 at 2016-02-09 15:53:07 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:53:07 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:53:07 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:53:07 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:53:07 +0100
+
+
+Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-09 15:53:07 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:54:55 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 539ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( logo.svg )` to `config/initializers/assets.rb` and restart your server):
+    10: <div id="sidebar">
+    11: <div id="logo">
+    12: <%= link_to root_path do %>
+    13: <%= image_tag "logo.svg" %>
+    14: <% end %>
+    15: </div>
+    16: <ul>
+  app/views/layouts/application.html.erb:13:in `block in _app_views_layouts_application_html_erb___4111004043478989741_70205214205460'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4111004043478989741_70205214205460'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.1ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (135.5ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (210.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 15:55:44 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (9.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 495ms (Views: 459.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:55:45 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:55:45 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 15:55:45 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:55:45 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:55:45 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:55:45 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:55:45 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:55:45 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 15:55:45 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:55:50 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 15:56:14 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 148ms (Views: 146.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 15:58:28 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 138ms (Views: 137.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 15:58:28 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 15:58:28 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 15:58:28 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 15:58:28 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 15:58:28 +0100
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 15:58:28 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 15:58:28 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 15:58:28 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 15:58:28 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 16:21:21 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 265ms (Views: 264.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:21:22 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:21:22 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:21:22 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:21:22 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:21:22 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:21:22 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:21:22 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:21:22 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:21:22 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 16:24:07 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 75ms (Views: 74.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:24:07 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:24:07 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:24:07 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:24:07 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:24:07 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:24:07 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:24:07 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:24:07 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:24:07 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 16:29:40 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 138ms (Views: 137.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:29:40 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:29:40 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:29:40 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:29:40 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:29:40 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:29:40 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:29:40 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:29:40 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:29:40 +0100
+
+
+Started GET "/posts/1" for ::1 at 2016-02-09 16:30:04 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (136.3ms)
+Completed 200 OK in 748ms (Views: 576.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 16:30:15 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-02-09 16:30:30 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 116ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-02-09 16:32:59 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 138ms (Views: 137.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:32:59 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:32:59 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:32:59 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:32:59 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:32:59 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:32:59 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:32:59 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:32:59 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:32:59 +0100
+
+
+Started GET "/posts/new" for ::1 at 2016-02-09 16:37:32 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 138ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:37:33 +0100
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:37:33 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:37:33 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:37:33 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:37:33 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:37:33 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:37:33 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:37:33 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:37:33 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 16:37:55 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 16:39:02 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 172ms (Views: 171.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:39:02 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:39:02 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:39:02 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:39:02 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:39:02 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:39:02 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:39:02 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:39:02 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:39:02 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 16:40:31 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 149ms (Views: 148.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:40:31 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:40:31 +0100
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:40:31 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:40:31 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:40:31 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:40:31 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:40:31 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:40:31 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:40:31 +0100
+
+
+Started GET "/posts/new" for ::1 at 2016-02-09 16:46:35 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 293ms (Views: 292.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-02-09 16:46:58 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:46:58 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:46:58 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:46:58 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:46:58 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:46:58 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:46:58 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:46:58 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:46:58 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:46:58 +0100
+
+
+Started GET "/posts/new" for ::1 at 2016-02-09 16:48:17 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:48:18 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:48:18 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:48:18 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:48:18 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:48:18 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:48:18 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:48:18 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:48:18 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:48:18 +0100
+
+
+Started GET "/posts/new" for ::1 at 2016-02-09 16:50:44 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:50:44 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:50:44 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:50:44 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:50:44 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:50:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:50:44 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:50:44 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:50:44 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:50:44 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 16:51:01 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 53.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 16:51:03 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 16:51:19 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-02-09 16:51:20 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 16:51:22 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2" for ::1 at 2016-02-09 16:51:23 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 16:51:24 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.1ms)
