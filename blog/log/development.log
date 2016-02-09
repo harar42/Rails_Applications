@@ -2435,3 +2435,786 @@ Processing by PostsController#index as HTML
   [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
   Rendered posts/index.html.erb within layouts/application (0.8ms)
 Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 16:56:44 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (14.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 539ms (Views: 489.1ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 16:56:45 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 16:56:45 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 16:56:45 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 16:56:45 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 16:56:45 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 16:56:45 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 16:56:45 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 16:56:45 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 16:56:45 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 17:14:32 +0100
+Processing by PostsController#index as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ArgumentError (Unknown validator: 'LenghtValidator'):
+  app/models/post.rb:3:in `<class:Post>'
+  app/models/post.rb:1:in `<top (required)>'
+  app/controllers/posts_controller.rb:4:in `index'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.7ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (114.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (216.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 17:15:10 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 314ms (Views: 296.2ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 17:15:10 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 17:15:10 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 17:15:10 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 17:15:10 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 17:15:10 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 17:15:10 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 17:15:10 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 17:15:10 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 17:15:10 +0100
+
+
+Started GET "/posts/new" for ::1 at 2016-02-09 17:15:14 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 125ms (Views: 124.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2016-02-09 17:15:16 +0100
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xjAjdQYHD3ubn70FeLBDUAdvUmIEilfnlOvCwRuK9HP52AOyYvZqGfjdBPLm7h+IM/Vs1/zELiqQjj7knIaQCw==", "post"=>{"title"=>"", "body"=>""}, "commit"=>"Save Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered posts/new.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x007f8c4b478c70>:0x007f8c4b2e3950>):
+     7:  <div id="errors">
+     8:  	<h2> <%= pluralize(@post.errors.count, "error") %> prevented this post from sauving </h2>
+     9:  		<ul>
+    10:  			<% post.errors.full_messages.each do |msg| %>
+    11:  				<li> <%= msg %> </li>
+    12:  			<% end %>
+    13:  		</ul>
+  app/views/posts/new.html.erb:10:in `block in _app_views_posts_new_html_erb___1370383262002477764_70120266730060'
+  app/views/posts/new.html.erb:5:in `_app_views_posts_new_html_erb___1370383262002477764_70120266730060'
+  app/controllers/posts_controller.rb:17:in `create'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.6ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.4ms)
+
+
+Started POST "/posts" for ::1 at 2016-02-09 17:15:51 +0100
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xjAjdQYHD3ubn70FeLBDUAdvUmIEilfnlOvCwRuK9HP52AOyYvZqGfjdBPLm7h+IM/Vs1/zELiqQjj7knIaQCw==", "post"=>{"title"=>"", "body"=>""}, "commit"=>"Save Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 127ms (Views: 124.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 17:15:51 +0100
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 17:15:51 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 17:15:51 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 17:15:51 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 17:15:51 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 17:15:51 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 17:15:51 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 17:15:51 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 17:15:51 +0100
+
+
+Started POST "/posts" for ::1 at 2016-02-09 17:18:52 +0100
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ame8YdG6Z9qL8i6Zk7e4ONp7aGnIkA3WVDfn+vxcnkg9j5ymtUsCuOiwl24N6eTg7uFW3DDedBtQUhvfe1D6MA==", "post"=>{"title"=>"Zidane sur Eden Hazard", "body"=>"Zidane place Hazard parmi les plus grands «Je voudrais être entraîné par Zidane» , a révélé le Diable Rouge au journal belge La Nouvelle Gazette. «Quand j'étais tout petit, je le regardais à la télévision et sur internet pendant des heures. Je parlais tout le temps de lui, je \"mangeais\" Zidane. C'est toujours un plaisir d'entendre un joueur que j'ai admiré, parler de moi. J'ai toujours apprécié Zidane» , a-t-il renchéri. Il y a près d'un an, ZZ n'avait pas hésité à faire du meilleur joueur de Premier League 2014-2015 l'égal des Lionel Messi et Cristiano Ronaldo. «Tout ce qu'il fait sur le terrain me plaît. J'aime son comportement, son côté décisif et le fait de le voir progresser chaque année. Il a encore une bonne marge de progression» , notait celui qui était alors entraîneur du Castilla. «J'adore le voir jouer car c'est un joueur qui crée des choses et c'est souvent spectaculaire de le voir jouer. Est-ce que je le vois aller au Real ? Demandez ça à quelqu'un d'autre. J'aime le joueur et c'est tout» , avait-il nuancé peu avant sa prise de fonctions. - Source: Maxifoot, http://www.maxifoot.fr/football/article-27760.htm#footref"}, "commit"=>"Save Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (41.7ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Zidane sur Eden Hazard"], ["body", "Zidane place Hazard parmi les plus grands «Je voudrais être entraîné par Zidane» , a révélé le Diable Rouge au journal belge La Nouvelle Gazette. «Quand j'étais tout petit, je le regardais à la télévision et sur internet pendant des heures. Je parlais tout le temps de lui, je \"mangeais\" Zidane. C'est toujours un plaisir d'entendre un joueur que j'ai admiré, parler de moi. J'ai toujours apprécié Zidane» , a-t-il renchéri. Il y a près d'un an, ZZ n'avait pas hésité à faire du meilleur joueur de Premier League 2014-2015 l'égal des Lionel Messi et Cristiano Ronaldo. «Tout ce qu'il fait sur le terrain me plaît. J'aime son comportement, son côté décisif et le fait de le voir progresser chaque année. Il a encore une bonne marge de progression» , notait celui qui était alors entraîneur du Castilla. «J'adore le voir jouer car c'est un joueur qui crée des choses et c'est souvent spectaculaire de le voir jouer. Est-ce que je le vois aller au Real ? Demandez ça à quelqu'un d'autre. J'aime le joueur et c'est tout» , avait-il nuancé peu avant sa prise de fonctions. - Source: Maxifoot, http://www.maxifoot.fr/football/article-27760.htm#footref"], ["created_at", "2016-02-09 16:18:52.296132"], ["updated_at", "2016-02-09 16:18:52.296132"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 177ms (ActiveRecord: 42.8ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-02-09 17:18:52 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 524ms (Views: 449.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 17:18:56 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-02-09 17:18:58 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-02-09 17:35:18 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 264ms (Views: 242.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 17:35:18 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 17:35:18 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 17:35:18 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 17:35:18 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 17:35:18 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 17:35:18 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 17:35:18 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 17:35:18 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 17:35:18 +0100
+
+
+Started GET "/posts/3/edit" for ::1 at 2016-02-09 17:35:23 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/_form.html.erb (2.1ms)
+  Rendered posts/edit.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 69ms (Views: 68.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/3" for ::1 at 2016-02-09 17:39:49 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2IdaYmSxU6Yxfd3MuCs9jTvMeeb3FFV23RCPXMbZmV/nb3qlAEA2xFI/ZDsmdWFVD1ZHUw9aLLvZdXN5QdX9Jw==", "post"=>{"title"=>"Zidane sur Eden Hazard Dernière version", "body"=>"Zidane place Hazard parmi les plus grands «Je voudrais être entraîné par Zidane» , a révélé le Diable Rouge au journal belge La Nouvelle Gazette. «Quand j'étais tout petit, je le regardais à la télévision et sur internet pendant des heures. Je parlais tout le temps de lui, je \"mangeais\" Zidane. C'est toujours un plaisir d'entendre un joueur que j'ai admiré, parler de moi. J'ai toujours apprécié Zidane» , a-t-il renchéri. Il y a près d'un an, ZZ n'avait pas hésité à faire du meilleur joueur de Premier League 2014-2015 l'égal des Lionel Messi et Cristiano Ronaldo. «Tout ce qu'il fait sur le terrain me plaît. J'aime son comportement, son côté décisif et le fait de le voir progresser chaque année. Il a encore une bonne marge de progression» , notait celui qui était alors entraîneur du Castilla. «J'adore le voir jouer car c'est un joueur qui crée des choses et c'est souvent spectaculaire de le voir jouer. Est-ce que je le vois aller au Real ? Demandez ça à quelqu'un d'autre. J'aime le joueur et c'est tout» , avait-il nuancé peu avant sa prise de fonctions. - Source: Maxifoot, http://www.maxifoot.fr/football/article-27760.htm#footref"}, "commit"=>"Update Post", "id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["title", "Zidane sur Eden Hazard Dernière version"], ["updated_at", "2016-02-09 16:39:49.373228"], ["id", 3]]
+  [1m[36m (42.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 47ms (ActiveRecord: 42.9ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-02-09 17:39:49 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-02-09 18:36:36 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.6ms)
+
+SyntaxError (/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:9: syntax error, unexpected ':', expecting =>
+...od: :delete, 	data: { confirm : 'Are you sure?'} );@output_b...
+...             	                 ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:9: syntax error, unexpected '}', expecting ')'
+...a: { confirm : 'Are you sure?'} );@output_buffer.safe_append...
+...                               ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/show.html.erb:9: syntax error, unexpected ':', expecting =>
+  app/views/posts/show.html.erb:9: syntax error, unexpected '}', expecting ')'
+  app/views/posts/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.0ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.6ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-02-09 21:10:54 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (15.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 15.1ms)
+
+SyntaxError (/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:9: syntax error, unexpected ':', expecting =>
+...od: :delete, 	data: { confirm : 'Are you sure?'} );@output_b...
+...             	                 ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:9: syntax error, unexpected '}', expecting ')'
+...a: { confirm : 'Are you sure?'} );@output_buffer.safe_append...
+...                               ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/show.html.erb:9: syntax error, unexpected ':', expecting =>
+  app/views/posts/show.html.erb:9: syntax error, unexpected '}', expecting ')'
+  app/views/posts/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.7ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.0ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-02-09 21:11:17 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (29.9ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 344ms (Views: 313.1ms | ActiveRecord: 29.9ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 21:11:17 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 21:11:17 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 21:11:17 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 21:11:17 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 21:11:17 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 21:11:17 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 21:11:17 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 21:11:17 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 21:11:17 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 21:11:19 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-02-09 21:11:32 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.7ms)
+  Rendered posts/new.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2016-02-09 21:11:42 +0100
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KbaIdRbacEMCT9SycfHKLu8GTB13W/YFJEM/bysSVU8WXqiycisVIWENbUXvr5b225xyqI8Vj8ggJsNKrB4xNw==", "post"=>{"title"=>"Oualid yh5", "body"=>"vwerfvrtg35rb35hg35h"}, "commit"=>"Create Post"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (20.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Oualid yh5"], ["body", "vwerfvrtg35rb35hg35h"], ["created_at", "2016-02-09 20:11:42.856906"], ["updated_at", "2016-02-09 20:11:42.856906"]]
+  [1m[36m (18.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 43ms (ActiveRecord: 39.1ms)
+
+
+Started GET "/posts/4" for ::1 at 2016-02-09 21:11:42 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 21:11:46 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-02-09 21:11:48 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 21:16:15 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 276ms (Views: 274.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 22:02:14 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (13.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 339ms (Views: 308.7ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 22:02:15 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 22:02:15 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 22:02:15 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 22:02:15 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 22:02:15 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 22:02:15 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 22:02:15 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 22:02:15 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 22:02:15 +0100
+
+
+Started GET "/posts/1" for ::1 at 2016-02-09 22:02:18 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:9: syntax error, unexpected ':', expecting =>
+...od: :delete, 	data: { confirm : 'Are you sure?'} );@output_b...
+...             	                 ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:9: syntax error, unexpected '}', expecting ')'
+...a: { confirm : 'Are you sure?'} );@output_buffer.safe_append...
+...                               ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/show.html.erb:9: syntax error, unexpected ':', expecting =>
+  app/views/posts/show.html.erb:9: syntax error, unexpected '}', expecting ')'
+  app/views/posts/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.5ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.8ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-02-09 22:02:19 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:9: syntax error, unexpected ':', expecting =>
+...od: :delete, 	data: { confirm : 'Are you sure?'} );@output_b...
+...             	                 ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:9: syntax error, unexpected '}', expecting ')'
+...a: { confirm : 'Are you sure?'} );@output_buffer.safe_append...
+...                               ^
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/harar/Desktop/Ruby/Rails_App/blog/app/views/posts/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/show.html.erb:9: syntax error, unexpected ':', expecting =>
+  app/views/posts/show.html.erb:9: syntax error, unexpected '}', expecting ')'
+  app/views/posts/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.5ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.8ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.2ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-02-09 22:03:16 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 22:03:16 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 22:03:16 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 22:03:16 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 22:03:16 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 22:03:16 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 22:03:16 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 22:03:16 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 22:03:16 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 22:03:16 +0100
+
+
+Started GET "/posts/1" for ::1 at 2016-02-09 22:03:39 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/_normalize.self-623a2a9776addfe924c2cb566ee21843494241a887244125f468fe7a4ec1a584.css?body=1" for ::1 at 2016-02-09 22:03:39 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 22:03:39 +0100
+
+
+Started GET "/assets/application.self-3ea36932eebc4902419f4a12df9ce7d3cfa6a28de28007150f83a114c712b9b2.css?body=1" for ::1 at 2016-02-09 22:03:39 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 22:03:39 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 22:03:39 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 22:03:39 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 22:03:39 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 22:03:39 +0100
+
+
+Started GET "/assets/logo-ca3b2dd41e5b824c1d25124f629a03272e86022fae5b606f21b2e6aafdb7fb4a.svg" for ::1 at 2016-02-09 22:03:39 +0100
+
+
+Started DELETE "/posts/1" for ::1 at 2016-02-09 22:03:44 +0100
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7uDTYrFWH9kFuBy6iPmYUD4AFdX57wSdcOHzH2LY/KjRCPOl1ad6u2b6pU0Wp8SICporYAGhfVB0hA865dSY0A==", "id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.6ms)
+
+NameError (undefined local variable or method `redirect_to_post_path' for #<PostsController:0x007f8c4e002468>):
+  app/controllers/posts_controller.rb:44:in `destroy'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.7ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.1ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.6ms)
+
+
+Started DELETE "/posts/1" for ::1 at 2016-02-09 22:05:12 +0100
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7uDTYrFWH9kFuBy6iPmYUD4AFdX57wSdcOHzH2LY/KjRCPOl1ad6u2b6pU0Wp8SICporYAGhfVB0hA865dSY0A==", "id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 20ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  app/controllers/posts_controller.rb:41:in `destroy'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.0ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.6ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (125.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 22:05:22 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 226ms (Views: 225.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-02-09 22:05:25 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 22:05:39 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2" for ::1 at 2016-02-09 22:05:40 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/posts/2" for ::1 at 2016-02-09 22:05:50 +0100
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EjhQi6AieQhE0V5NW8bK14jymrT2WGrheRehowE8zVAt0HBMxNMcaieT57rFmJYPvGikAQ4WEyx9cl2GhjCpKA==", "id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 2]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.8ms)
+
+NameError (undefined local variable or method `redirect_to_posts_path' for #<PostsController:0x007f8c495d3e78>):
+  app/controllers/posts_controller.rb:44:in `destroy'
+
+
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/harar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 22:06:42 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 175ms (Views: 156.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-02-09 22:06:47 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.6ms)
+  Rendered posts/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 85ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2016-02-09 22:07:10 +0100
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZE1n27HteGVslT2WesgKp6Z3ZxSDgceuJyP9M+9sVRBbpUcc1RwdBw/XhGHkllZ/ku1ZoXvPvmMjRgEWaGAxaA==", "post"=>{"title"=>"Tuto allo", "body"=>"Laisse tomber"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Tuto allo"], ["body", "Laisse tomber"], ["created_at", "2016-02-09 21:07:10.149947"], ["updated_at", "2016-02-09 21:07:10.149947"]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 14ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-02-09 22:07:10 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/posts/5" for ::1 at 2016-02-09 22:07:19 +0100
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tDOLhNH5Yq8zgfoU7C4BOHuhxIkCD+Nzj9vf938s/daL26tDtQgHzVDDQ+NycF3gTzv6PPpBmr6LviPS+CCZrg==", "id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 3ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/posts" for ::1 at 2016-02-09 22:07:19 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/4" for ::1 at 2016-02-09 22:12:06 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 319ms (Views: 298.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/posts/4" for ::1 at 2016-02-09 22:12:09 +0100
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CXbX/kMJ6E81V7+4rxhxKrVFFfDZJXIPAmLv7e/JrXs2nvc5J/iNLVYVBk8xRi3ygd8rRSFrC8IGBxPIaMXJAw==", "id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 22:12:09 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.1ms)
