@@ -17,28 +17,36 @@
 <ul>
 <li class="category"> Website </li>
 <li><%= link_to "Blog", root_path%></li>
-<li> About </li>
+<li> <%= link_to "About", about_path%> </li>
 </ul>
 
 <ul>
 <li class="category"> Social</li>
 <li> <a href="https://github.com/harar42"> Github </a> </li>
-<li><a href="https://github.com/harar42"> Github </a> </li>
-<li><a href="https://github.com/harar42"> Github </a> </li>
+<li><a href="https://fr.linkedin.com/in/haouas-arar-08a445a6"> Linkedin </a> </li>
+<li><a href="http://www.doyoubuzz.com/haouas-arar"> DoYouBuzz </a> </li>
 <li><a href="mailto:ararhaouas@yahoo.fr"> Email </a> </li>
 </ul>
-
-<p class="sign_in"> Admin Login </p>
+<% if !user_signed_in? %>
+<p class="sign_in"> <%=link_to "Admin Login", new_user_session_path %> </p>
+<% end %>
 </div>
 
 <div id="main_content">
 	<div id="header">
+	<% if current_page?(root_path)%>
 		<p> All Posts </p>
-
-		<div class="buttons">
-		<button class="button"> <%= link_to "New Post", new_post_path %></button>
-		<button class="button"> Log Out </button>
-	</div>
+	<% elsif current_page?(about_path) %>
+	<p> About </p>
+	<% else %>
+	<%= link_to "Back to All Posts", root_path %>
+		<% end %>
+		<% if user_signed_in? %>
+			<div class="buttons">
+			<button class="button"> <%= link_to "New Post", new_post_path %></button>
+			<button class="button"> <%= link_to "Log Out", destroy_user_session_path, :method => :delete %> </button>
+		</div>
+		<% end %>
 </div>
 <% flash.each do |name, msg| %>
 
@@ -49,3 +57,6 @@
 
 </body>
 </html>
+
+
+
