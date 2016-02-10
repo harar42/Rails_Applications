@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
 	before_action :find_recipe, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_user!, except: [:index, :show]
 	def index
 		@recipe = Recipe.all.order("created_at DESC")
 	end
@@ -9,11 +10,11 @@ class RecipesController < ApplicationController
 	end
 
 	def new
-		@recipe = Recipe.new
+		@recipe = current_user.recipes.build
 	end
 
 	def create
-		@recipe = Recipe.new(recipe_params)
+		@recipe = current_user.recipes.build(recipe_params)
 
 		if @recipe.save
 			redirect_to @recipe
@@ -49,9 +50,10 @@ class RecipesController < ApplicationController
 	private
 
 		def recipe_params
-			params.require(:recipe).permit(:title, :description, :image)
+			params.require(:recipe).permit(:title, :description, :image, ingredients_attributes: [:id, :name, :_destroy], directions_attributes: [:id, :step, :_destroy])
+	    end
 
-		end
+	
 		def find_recipe
 			@recipe = Recipe.find(params[:id])
 		end
