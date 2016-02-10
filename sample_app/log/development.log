@@ -36449,3 +36449,13 @@ Completed 200 OK in 174ms (Views: 172.7ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/42-logo-09600341172f52aed4431b65c64955d91a0cf5f2e7f3fe2511bceed00137db75.png" for ::1 at 2016-02-05 12:23:17 +0100
+
+
+Started GET "/" for ::1 at 2016-02-09 15:03:54 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (15.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_stylesheets.html.erb (120.9ms)
+  Rendered layouts/_header.html.erb (520.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 811ms (Views: 792.9ms | ActiveRecord: 0.0ms)
