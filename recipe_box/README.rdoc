@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Site Boite à recettes.
 
-Things you may want to cover:
+Utilisation de la gem Devise.
 
-* Ruby version
+Utilisation de la gem Bootsrap-Sass.
 
-* System dependencies
+Utilisation de la gem Paperclip.
 
-* Configuration
+Utilisation de la gem Cocoon.
 
-* Database creation
+Utilisation de la gem Haml.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Utilisation de la gem Simple_form.
