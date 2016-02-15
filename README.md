@@ -1,6 +1,6 @@
 # Rails_Applications
 
-Update prevu le 14/02/16 pour tous mes projets
+Update prevu le 20/02/16 pour tous mes projets
 
 
 Serie de projets en Rails.
