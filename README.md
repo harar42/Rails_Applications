@@ -5,15 +5,17 @@ Update prevu le 14/02/16 pour tous mes projets
 
 Serie de projets en Rails.
 
-Creation d'un site exemple sans utilisation de gems.(site lambda)
+1- sample- Creation d'un site exemple sans utilisation de gems.(site lambda)
 
-Creation d'un blog.
+2- blog - Creation d'un blog.
 
-Creation d'une Todo App.
+3- recipe box - Creation d'un site Boite à recettes.
 
-Creation d'un Job Board.
+4- Creation d'une Todo App.
 
-Creation d'un forum.
+5- Creation d'un Job Board.
+
+6- Creation d'un forum.
 
 
 
