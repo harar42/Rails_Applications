@@ -11,6 +11,8 @@ Serie de projets en Rails.
 
 3- recipe box - Creation d'un site Boite à recettes.
 
+4- My Pin - clone de Pinterest.
+
 4- Creation d'une Todo App.
 
 5- Creation d'un Job Board.
